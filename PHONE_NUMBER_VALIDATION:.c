@@ -1,19 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    long long int m,cnt=0;
-    scanf("%lld",&m);
-    while(m>0)
-    {
-        m=m/10;
-        cnt++;
-    }
-    if(cnt==10)
-    {
-        printf("Valid");
-    }
-    else
-    {
-        printf("Invalid");
-    }
+	long long int mno,count=0;
+	scanf("%lld",&mno);
+	while(mno>0)
+	{
+		mno=mno/10;
+		count++;
+	}
+	if(count==10)
+	{
+		printf("Valid");
+	}
+	else
+	{
+		printf("Invalid");
+	}
 }
