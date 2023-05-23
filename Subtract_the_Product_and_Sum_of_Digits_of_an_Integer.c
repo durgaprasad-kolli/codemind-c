@@ -1,14 +1,19 @@
 #include<stdio.h>
 int main()
 {
-    int n,rem=0,s=0,p=1;
+    int n,rem,sum=0,prod=1,x,rem2;
     scanf("%d",&n);
-    while(n!=0)
-    {
+    x=n;
+    while (n>0) {
         rem=n%10;
-        s=s+rem;
-        p=p*rem;
-        n=n/10;
+        sum=sum+rem;
+        n/=10;
     }
-    printf("%d",p-s);
+    
+    while (x>0) {
+        rem2=x%10;
+        prod=prod*rem2;
+        x/=10;
+    }
+    printf("%d",prod-sum);
 }
